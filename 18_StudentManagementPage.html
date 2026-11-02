@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Student Management</a>
+        </div>
+    </nav>
+
+
+    <div class="container mt-4">
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>Students</h2>
+
+            <button class="btn btn-primary">
+                Add Student
+            </button>
+        </div>
+
+
+        <input type="text"
+               class="form-control mb-3"
+               placeholder="Search student...">
+
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-hover">
+
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Rahul Patel</td>
+                        <td>rahul@gmail.com</td>
+                        <td>BCA</td>
+                        <td>
+                            <button class="btn btn-sm btn-warning">
+                                Edit
+                            </button>
+
+                            <button class="btn btn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Priya Shah</td>
+                        <td>priya@gmail.com</td>
+                        <td>BBA</td>
+                        <td>
+                            <button class="btn btn-sm btn-warning">
+                                Edit
+                            </button>
+
+                            <button class="btn btn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Amit Patel</td>
+                        <td>amit@gmail.com</td>
+                        <td>BCA</td>
+                        <td>
+                            <button class="btn btn-sm btn-warning">
+                                Edit
+                            </button>
+
+                            <button class="btn btn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <nav>
+            <ul class="pagination justify-content-center">
+
+                <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                </li>
+
+                <li class="page-item active">
+                    <a class="page-link">1</a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link">2</a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link">3</a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link">Next</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <div class="modal fade" id="deleteModal">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Delete Student</h5>
+
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal">
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    Are you sure you want to delete this student?
+                </div>
+
+                <div class="modal-footer">
+
+                    <button class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+
+                    <button class="btn btn-danger">
+                        Delete
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
+
